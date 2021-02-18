@@ -1,6 +1,6 @@
 require_relative "./config/env"
 require "sequel"
 
-DB = Sequel.connect(ENV.delete("DATABASE_URL"))
+DB = Sequel.connect("sqlite://blog.db")
 
 DB.extension :looser_typecasting

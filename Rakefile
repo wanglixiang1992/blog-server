@@ -8,14 +8,14 @@ end
 
 task :default => :test
 
-MIGRATION_DIR = "migrate".freeze
+MIGRATION_DIR = "db/migrate".freeze
 
 migrate = lambda do |version|
   require_relative "db"
   require "logger"
   Sequel.extension :migration
   DB.loggers << Logger.new($stdout) if DB.loggers.empty?
-  Sequel::Migrator.apply(DB, 'migrate', version)
+  Sequel::Migrator.apply(DB, MIGRATION_DIR, version)
 end
 
 namespace :db do

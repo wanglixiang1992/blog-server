@@ -7,11 +7,12 @@ end
 
 Sequel::Model.plugin :auto_validations
 Sequel::Model.plugin :prepared_statements
+Sequel::Model.plugin :timestamps
 Sequel::Model.plugin :subclasses unless ENV['RACK_ENV'] == "development"
 # Sequel::Model.plugin :dirty
 # Sequel::Model.db.extension(:pagination)
 
-# Sequel::Model.raise_on_save_failure = false
+Sequel::Model.raise_on_save_failure = false
 
 Dir["./models/**/*.rb"].each { |f| require f }
 

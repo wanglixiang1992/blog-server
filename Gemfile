@@ -8,7 +8,7 @@ gem "roda"
 gem "puma"
 
 gem "sequel"
-gem "pg"
+gem "sqlite3"
 
 gem "slim"
 gem "pry"
@@ -17,7 +17,7 @@ gem "pry"
 # gem "http"
 
 group :development do
-  gem "rerun"
+  gem "shotgun"
 end
 
 group :development, :test do
