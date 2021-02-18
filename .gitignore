@@ -8,3 +8,4 @@ database.db
 public/*.js
 public/*.css
 public/manifest.json
+.byebug_history
