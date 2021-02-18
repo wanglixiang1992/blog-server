@@ -11,6 +11,8 @@ bundle install
 shotgun -p 4000
 ```
 
+An API server will be running on http://localhost:4000
+
 # Routes
 
 ```
