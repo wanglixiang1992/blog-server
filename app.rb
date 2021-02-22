@@ -1,5 +1,4 @@
 require "roda"
-require "byebug"
 require_relative "./models"
 
 class App < Roda
