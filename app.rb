@@ -54,7 +54,7 @@ class App < Roda
           # GET
           r.get do
             @post.to_hash.merge({
-              comments_path: "/posts/#{post.id}/comments"
+              comments_path: "/posts/#{@post.id}/comments"
             })
           end
         end
