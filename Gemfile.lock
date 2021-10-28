@@ -8,6 +8,7 @@ GEM
     minitest-hooks (1.5.0)
       minitest (> 5.3)
     nio4r (2.5.5)
+    pg (1.2.3)
     pry (0.14.0)
       coderay (~> 1.1)
       method_source (~> 1.0)
@@ -22,7 +23,6 @@ GEM
     slim (4.1.0)
       temple (>= 0.7.6, < 0.9)
       tilt (>= 2.0.6, < 2.1)
-    sqlite3 (1.4.2)
     temple (0.8.2)
     tilt (2.0.10)
     warning (1.2.0)
@@ -34,13 +34,13 @@ DEPENDENCIES
   dotenv
   minitest
   minitest-hooks
+  pg
   pry
   puma
   roda
   sequel
   shotgun
   slim
-  sqlite3
   warning
 
 BUNDLED WITH

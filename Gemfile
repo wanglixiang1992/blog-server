@@ -8,7 +8,7 @@ gem "roda"
 gem "puma"
 
 gem "sequel"
-gem "sqlite3"
+gem "pg"
 
 gem "slim"
 gem "pry"
