@@ -16,6 +16,8 @@ gem "pry"
 # gem "oj"
 # gem "http"
 
+gem "rake"
+
 group :development do
   gem "shotgun"
 end
